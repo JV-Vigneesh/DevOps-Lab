@@ -11,3 +11,5 @@ Task 4 - Deploy and Rollback Automation
 Task 5 - Create and manage Docker images and containers
 
 Task 6 - Deploy applications on Kubernetes clusters; scale and manage containerized apps
+
+Task 7 - Deploy infrastructure using Terraform
