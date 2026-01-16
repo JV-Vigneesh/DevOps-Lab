@@ -9,3 +9,5 @@ Task 3 - Configure Jenkins to automate build and testing processes using CI pipe
 Task 4 - Deploy and Rollback Automation
 
 Task 5 - Create and manage Docker images and containers
+
+Task 6 - Deploy applications on Kubernetes clusters; scale and manage containerized apps
