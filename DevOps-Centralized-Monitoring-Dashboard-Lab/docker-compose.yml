@@ -1,0 +1,33 @@
+version: '3'
+
+services:
+
+  # Prometheus service for collecting and storing metrics
+  prometheus:
+    image: prom/prometheus
+    container_name: prometheus
+    volumes:
+      # Mount Prometheus configuration file into the container
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      # Expose Prometheus web interface on port 9090
+      - "9090:9090"
+    restart: always
+
+  # Node Exporter service for exposing system metrics
+  node-exporter:
+    image: prom/node-exporter
+    container_name: node-exporter
+    ports:
+      # Expose Node Exporter metrics endpoint on port 9100
+      - "9100:9100"
+    restart: always
+
+  # Grafana service for visualization and dashboards
+  grafana:
+    image: grafana/grafana
+    container_name: grafana
+    ports:
+      # Expose Grafana web interface on port 3000
+      - "3000:3000"
+    restart: always

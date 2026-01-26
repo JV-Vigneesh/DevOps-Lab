@@ -1,0 +1,12 @@
+global:
+  # Default scrape interval for collecting metrics
+  scrape_interval: 15s
+
+scrape_configs:
+
+  # Scrape configuration for Node Exporter
+  - job_name: 'node_exporter'
+
+    static_configs:
+      # Target Node Exporter running on port 9100
+      - targets: ['node-exporter:9100']
