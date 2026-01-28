@@ -15,3 +15,5 @@ Task 6 - Deploy applications on Kubernetes clusters; scale and manage containeri
 Task 7 - Deploy infrastructure using Terraform
 
 Task 8 - To implement a centralized monitoring dashboard using industry-standard tools
+
+Task 9 - Implement basic security checks in CI/CD pipelines
